@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>F4n.Blog</RootNamespace>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="2.7.0" />
+	  
+    <ProjectReference Include="..\F4n.Blog.Application.Caching\F4n.Blog.Application.Caching.csproj" />
+	  
+    <ProjectReference Include="..\F4n.Blog.Application.Contracts\F4n.Blog.Application.Contracts.csproj" />
+	<ProjectReference Include="..\F4n.Blog.Domain\F4n.Blog.Domain.csproj" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.5" />
+
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\F4n.Blog.Domain\F4n.Blog.Domain.csproj" />
+
+	  <PackageReference Include="log4net" Version="2.0.8" />
+	  <PackageReference Include="MailKit" Version="2.7.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+	  <PackageReference Include="MimeKit" Version="2.8.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+	  <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0007" />
+	  <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta0007" />
+  </ItemGroup>
+
+</Project>

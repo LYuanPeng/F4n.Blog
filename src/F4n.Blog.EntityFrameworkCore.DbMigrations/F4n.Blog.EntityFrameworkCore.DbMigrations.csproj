@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>F4n.Blog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220516070955_Initial.cs" />
+    <Compile Remove="Migrations\20220516070955_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20220516072218_Initial.cs" />
+    <Compile Remove="Migrations\20220516072218_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20220516084504_Initial.cs" />
+    <Compile Remove="Migrations\20220516084504_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20220516084703_Initial.cs" />
+    <Compile Remove="Migrations\20220516084703_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20220516085733_Init.cs" />
+    <Compile Remove="Migrations\20220516085733_Init.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\F4n.Blog.EntityFrameworkCore\F4n.Blog.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

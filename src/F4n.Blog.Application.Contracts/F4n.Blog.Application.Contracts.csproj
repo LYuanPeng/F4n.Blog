@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>F4n.Blog</RootNamespace>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	
+	<DocumentationFile>..\F4n.Blog.HttpApi.Hosting\F4n.Blog.Application.Contracts.xml</DocumentationFile>
+	  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\F4n.Blog.Domain.Shared\F4n.Blog.Domain.Shared.csproj" />
+  </ItemGroup>
+
+
+</Project>
